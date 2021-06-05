@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Triangle Display Calculator</title>
 </head>
+
 <body>
     <canvas class="d-block mx-auto my-3" width="720" height="400" id="TriangleDrawing"></canvas>
     <div class="container">
-        <div class="row gy-2 " id="inputs">
-            <div class="col-12 col-md-4 text-center">
-                <div class="input-group">
-                    <span class="input-group-text" id="side1text">A:</span>
-                    <input class="form-control" aria-describedby="side1text" type="text" name="A" id="side1">
+        <form>
+            <div class="row gy-2 " id="inputs">
+                <div class="col-12 col-md-4 text-center">
+                    <div class="input-group">
+                        <span class="input-group-text" id="side1text">A:</span>
+                        <input class="form-control" aria-describedby="side1text" type="number" name="A" id="side1"
+                            required>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="input-group">
+                        <span class="input-group-text" id="side2text">B:</span>
+                        <input class="form-control" aria-describedby="side2text" type="number" name="B" id="side2"
+                            required>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="input-group">
+                        <span class="input-group-text" id="side3text">C:</span>
+                        <input class="form-control" aria-describedby="side3text" type="number" name="C" id="side3"
+                            required>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="input-group">
-                    <span class="input-group-text" id="side2text">B:</span>
-                    <input class="form-control" aria-describedby="side2text" type="text" name="B" id="side2">
-                </div>
+            <div class="text-center my-3">
+                <button type="button" class="btn btn-primary" onclick="GetTriangleType()">Submit</button>
             </div>
-            <div class="col-12 col-md-4 text-center">
-                <div class="input-group">
-                    <span class="input-group-text" id="side3text">C:</span>
-                    <input class="form-control" aria-describedby="side3text" type="text" name="C" id="side3">
-                </div>
-            </div>
-        </div>
-        <div class="text-center my-3">
-            <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+        </form>
     </div>
+
+
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
