@@ -13,34 +13,29 @@
 <body>
     <canvas class="d-block mx-auto my-3" width="720" height="400" id="TriangleDrawing"></canvas>
     <div class="container">
-        <form>
-            <div class="row gy-2 " id="inputs">
-                <div class="col-12 col-md-4 text-center">
-                    <div class="input-group">
-                        <span class="input-group-text" id="side1text">A:</span>
-                        <input class="form-control" aria-describedby="side1text" type="number" name="A" id="side1"
-                            required>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <div class="input-group">
-                        <span class="input-group-text" id="side2text">B:</span>
-                        <input class="form-control" aria-describedby="side2text" type="number" name="B" id="side2"
-                            required>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <div class="input-group">
-                        <span class="input-group-text" id="side3text">C:</span>
-                        <input class="form-control" aria-describedby="side3text" type="number" name="C" id="side3"
-                            required>
-                    </div>
+        <div class="row gy-2 " id="inputs">
+            <div class="col-12 col-md-4 text-center">
+                <div class="input-group">
+                    <span class="input-group-text" id="side1text">A:</span>
+                    <input class="form-control" aria-describedby="side1text" type="number" name="A" id="side1" step="1">
                 </div>
             </div>
-            <div class="text-center my-3">
-                <button type="button" class="btn btn-primary" onclick="GetTriangleType()">Submit</button>
+            <div class="col-12 col-md-4 text-center">
+                <div class="input-group">
+                    <span class="input-group-text" id="side2text">B:</span>
+                    <input class="form-control" aria-describedby="side2text" type="number" name="B" id="side2" step="1">
+                </div>
             </div>
-        </form>
+            <div class="col-12 col-md-4 text-center">
+                <div class="input-group">
+                    <span class="input-group-text" id="side3text">C:</span>
+                    <input class="form-control" aria-describedby="side3text" type="number" name="C" id="side3" step="1">
+                </div>
+            </div>
+        </div>
+        <div class="text-center my-3">
+            <button type="submit" class="btn btn-primary" onclick="GetTriangleType()">Submit</button>
+        </div>
     </div>
 
 
