@@ -1,0 +1,54 @@
+$primary-color: #1b13f2;
+$secondary-color: #13b7f2;
+$accent-color: #f21334;
+
+#TriangleDrawing{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 24px;
+    border: 2px solid #000;
+}
+#inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    span{
+        font-size: x-large;
+    }
+    input{
+        padding: 6px 10px;
+        border: 2px solid $secondary-color;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: 0.5s ease-in-out;
+        outline: none;
+        &:hover{
+            border-color: $primary-color;
+        }
+        &:focus{
+            border-color: $accent-color;
+        }
+    }
+}
+#submitTriangle{
+    margin-top: 15px;
+    padding: 5px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+    &:hover{
+        background-color: $accent-color;
+    }
+    box-shadow: 2px 2px 2px gray;
+}
