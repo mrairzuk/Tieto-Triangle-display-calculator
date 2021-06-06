@@ -1,0 +1,66 @@
+#TriangleDrawing {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 24px;
+  border: 2px solid #000;
+}
+
+#inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inputs span {
+  font-size: x-large;
+}
+
+#inputs input {
+  padding: 6px 10px;
+  border: 2px solid #13b7f2;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  outline: none;
+}
+
+#inputs input:hover {
+  border-color: #1b13f2;
+}
+
+#inputs input:focus {
+  border-color: #f21334;
+}
+
+#submitTriangle {
+  margin-top: 15px;
+  padding: 5px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #1b13f2;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 2px 2px 2px gray;
+          box-shadow: 2px 2px 2px gray;
+}
+
+#submitTriangle:hover {
+  background-color: #f21334;
+}
+/*# sourceMappingURL=style.css.map */
